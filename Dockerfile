@@ -2,7 +2,8 @@ FROM --platform=linux/amd64 node:19-bullseye-slim
 
 WORKDIR /app
 
-COPY . .
+COPY ./app .
+COPY ./package.json /app/package.json
 
 RUN yarn install
 RUN yarn build
