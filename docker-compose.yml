@@ -10,4 +10,23 @@ services:
     env_file:
       - .env
     volumes:
-      - ./src:/app
+      - ./app/app:/app/app
+      - ./app/config:/app/config
+      - ./app/hooks:/app/hooks
+      - ./app/i18n:/app/i18n
+      - ./app/public:/app/public
+      - ./app/service:/app/service
+      - ./app/types:/app/types
+      - ./app/utils:/app/utils
+      - ./app/.editorconfig:/app/.editorconfig
+      - ./app/.eslintrc.json:/app/.eslintrc.json
+      - ./app/.gitignore:/app/.gitignore
+      - ./app/next.config.js:/app/next.config.js
+      - ./app/package.json:/app/package.json
+      - ./app/postcss.config.js:/app/postcss.config.js
+      - ./app/tailwind.config.js:/app/tailwind.config.js
+      - ./app/tsconfig.json:/app/tsconfig.json
+      - ./app/typography.js:/app/typography.js
+
+    # volumes:
+    #   - ./app:/app

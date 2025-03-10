@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "docker-start": "./startup.sh",
+    "docker-start": "./../startup.sh",
+    "docker-build": "./../build.sh",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
