@@ -27,6 +27,7 @@ services:
       - ./app/tailwind.config.js:/app/tailwind.config.js
       - ./app/tsconfig.json:/app/tsconfig.json
       - ./app/typography.js:/app/typography.js
+      - ./app/start-app.sh:/app/start-app.sh
 
     # volumes:
     #   - ./app:/app
